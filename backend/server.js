@@ -7,16 +7,16 @@ dotenv.config();
 
 const app = express();
 
-// middleware
+// middlewares
 app.use(cors());
 app.use(express.json());
 
-// DB connect
+// DB 
 connectDB();
 
-// routes
+// routes-api
 app.use("/api/tasks", require("./routes/taskRoutes"));
 
-// server start
+// server start-run
 const PORT = 5000;
 app.listen(PORT, () => console.log(`Server running on ${PORT}`));
