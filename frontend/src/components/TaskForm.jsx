@@ -38,7 +38,7 @@ const TaskForm = ({ refresh }) => {
   return (
     <form onSubmit={handleSubmit} className="space-y-4">
 
-      {/* Titl*/}
+      {/* Title*/}
       <input
         className="w-full p-2 rounded bg-gray-700 text-white outline-none focus:ring-2 focus:ring-blue-500"
         placeholder="Task Title"
@@ -48,7 +48,7 @@ const TaskForm = ({ refresh }) => {
         }
       />
 
-      {/* Description */}
+      {/* Descriptio */}
       <input
         className="w-full p-2 rounded bg-gray-700 text-white outline-none focus:ring-2 focus:ring-blue-500"
         placeholder="Description"
