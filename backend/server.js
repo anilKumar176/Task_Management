@@ -17,6 +17,6 @@ connectDB();
 // routes
 app.use("/api/tasks", require("./routes/taskRoutes"));
 
-// server start
+// server start-run
 const PORT = 5000;
 app.listen(PORT, () => console.log(`Server running on ${PORT}`));
