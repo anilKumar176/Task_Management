@@ -14,7 +14,7 @@ app.use(express.json());
 // DB connection
 connectDB();
 
-// routes-api
+// routes
 app.use("/api/tasks", require("./routes/taskRoutes"));
 
 // server start
