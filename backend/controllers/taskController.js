@@ -20,7 +20,7 @@ exports.createTask = async (req, res) => {
 };
 
 
-//  GET ALL TASKS
+//  GET ALL TASK
 exports.getTasks = async (req, res) => {
   try {
     const tasks = await Task.find().sort({ createdAt: -1 });
