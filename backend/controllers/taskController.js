@@ -1,7 +1,7 @@
 const Task = require("../models/Task");
 
 
-//  CREATE 
+//  CREATE Task
 exports.createTask = async (req, res) => {
   try {
     const { title, description } = req.body;
