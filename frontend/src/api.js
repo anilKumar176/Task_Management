@@ -1,5 +1,6 @@
 import axios from "axios";
-//connect to backend
+
+// connect to backend
 export const API = axios.create({
-  baseURL: "https://task-management-2vie.onrender.com"
+  baseURL: "https://task-management-2vie.onrender.com/api"
 });
