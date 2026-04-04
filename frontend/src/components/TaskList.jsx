@@ -5,7 +5,7 @@ const getColor = (status) => {
   if (status === "in-progress") return "bg-yellow-500";
   return "bg-red-500";
 };
-
+// Task List Component
 const TaskList = ({ tasks, refresh }) => {
 
   const handleDelete = async (id) => {
