@@ -7,16 +7,24 @@ dotenv.config();
 
 const app = express();
 
-// middlewares
-app.use(cors());
+//  middlewares
+app.use(cors({
+  origin: "*"
+}));
 app.use(express.json());
 
-// DB connection
+//  DB connection
 connectDB();
 
-// routes
+//  test route (IMPORTANT)
+app.get("/", (req, res) => {
+  res.send("API running 🚀");
+});
+
+//  routes
 app.use("/api/tasks", require("./routes/taskRoutes"));
 
-// server start-run
-const PORT = 5000;
+//  dynamic PORT (IMPORTANT)
+const PORT = process.env.PORT || 5000;
+
 app.listen(PORT, () => console.log(`Server running on ${PORT}`));
